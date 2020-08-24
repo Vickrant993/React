@@ -28,7 +28,6 @@ ReactDom.render(<SampleHooks />,
 
 
 
-
 /* 
 
   picture Gallery with inline css e.g 
