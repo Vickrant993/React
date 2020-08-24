@@ -19,7 +19,7 @@ import SampleHooks from './sample/functional-component/hooksReact'
 //   </React.Fragment>,
 //   document.getElementById('root')
 // );
-ReactDom.render(<SampleHooks />,
+ReactDom.render(<App />,
   document.getElementById('root')
 );
 

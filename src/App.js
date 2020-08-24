@@ -8,10 +8,11 @@ import Card from './sample/functional-component/card'
 import NetflixCard  from './sample/functional-component/netflixProject'
 // import ArrayMapComp from './sample/functional-component/arrayMap'
 import sampData from './sample/functional-component/mockJson/netflixData';
-
-const cardsArray = sampData.map((data,i)=>{
-  return <NetflixCard key={i} cardTitle={data.cardTitle} cardImg={data.cardImg} cardLinkUrl={data.cardLinkUrl} />
-})
+import EventHandling from './sample/functional-component/HandlingEvents'
+import MyForm from './sample/functional-component/FormBasic'
+// const cardsArray = sampData.map((data,i)=>{
+//   return <NetflixCard key={i} cardTitle={data.cardTitle} cardImg={data.cardImg} cardLinkUrl={data.cardLinkUrl} />
+// })
 class App extends Component {
   constructor(){
     super();
@@ -53,9 +54,7 @@ class App extends Component {
       //   <div className="clearfix"></div>
       // </React.Fragment>
       // <ArrayMapComp />
-      <div>
-        
-      </div>
+      <MyForm />
     );
   }
 }
