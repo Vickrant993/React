@@ -1,0 +1,26 @@
+html, body{
+  background-color: #b4f2e1 !important;
+  padding: 12px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  
+}
+
+.heading{
+  color: #f09191;
+  display: flex;
+  justify-content: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.imgsDiv{
+  display: flex;
+  justify-content: center;
+}
+
+.clearfix{
+  clear: both;
+}
