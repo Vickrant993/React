@@ -24,7 +24,7 @@ const MyForm = () => {
                     value={fname}
                     onChange={inputValChange}
                 />
-                <button type="button" onClick={submitForm} >Submit</button>
+                <button type="button" onClick={submitForm} > Submit</button>
             </div>
         </React.Fragment>
     )
