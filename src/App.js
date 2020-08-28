@@ -10,7 +10,8 @@ import NetflixCard  from './sample/functional-component/netflixProject'
 import sampData from './sample/functional-component/mockJson/netflixData';
 import EventHandling from './sample/functional-component/HandlingEvents'
 // import MyForm from './sample/functional-component/FormBasic'
-import MyFormWithSpreadOperator from './sample/functional-component/FormsBasicWithSpreadOperator'
+// import MyFormWithSpreadOperator from './sample/functional-component/FormsBasicWithSpreadOperator'
+import ToDoListComponent from './sample/functional-component/ToDoList'
 // const cardsArray = sampData.map((data,i)=>{
 //   return <NetflixCard key={i} cardTitle={data.cardTitle} cardImg={data.cardImg} cardLinkUrl={data.cardLinkUrl} />
 // })
@@ -55,7 +56,7 @@ class App extends Component {
       //   <div className="clearfix"></div>
       // </React.Fragment>
       // <ArrayMapComp />
-      <MyFormWithSpreadOperator />
+      <ToDoListComponent />
     );
   }
 }
