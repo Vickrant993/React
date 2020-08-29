@@ -45,14 +45,14 @@ outline: none;
 }
 
 .btn-circle{
-    min-height: 40px;
-    width: 40px;
-    border-radius: 50%;
+    min-height: 40px !important;
+    width: 40px !important;
+    border-radius: 50% !important;
     font-size: 20px;
     border: none;
     outline: none;
-    margin-left: 10px;
-    box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.3);
+    margin-left: 10px !important;
+    box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.3) !important;
 }
 
 .btn-circle.add{    
