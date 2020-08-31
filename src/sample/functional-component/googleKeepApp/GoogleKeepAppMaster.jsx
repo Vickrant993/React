@@ -5,11 +5,11 @@ import Footer from './Footer';
 import Note from './Note';
 
 const GoogleKeepApp =()=>{    
-    const [note, setNote]= useState([])
+    const [notes, setNote]= useState([])
     const addNewNote = (note)=>{
         setNote((oldVal)=>{
             return [
-                ...setNote,
+                ...oldVal,
                 note
             ]
         })
@@ -17,8 +17,19 @@ const GoogleKeepApp =()=>{
     return (
         <React.Fragment>
             <Header />
-            <CreateNote addNote={addNewNote} />
-            <Note />
+            <CreateNote addNote={addNewNote} />            
+            {
+                notes.map((currVal,index)=>{
+                    return(
+                    <Note 
+                    key={index}
+                    id={index}
+                    title={currVal.title}
+                    content={currVal.content}
+                    />
+                    )
+                })
+            }
             <Footer />
         </React.Fragment>
     )
