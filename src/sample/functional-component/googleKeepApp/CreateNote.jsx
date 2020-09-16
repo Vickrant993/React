@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import AddIcon from '@material-ui/icons/Add';
 
-const CreateNote = (prop) => {
+const CreateNote = (props) => {
     const [notes, setNotes] = useState({
         title:'',
         content:''
@@ -18,7 +18,11 @@ const CreateNote = (prop) => {
     
     const addNewNote=()=>{
         event.preventDefault();
-        prop.addNote(notes)
+        props.addNote(notes)
+        setNotes({
+            title:'',
+            content:''
+        });
     }
     return (
         <React.Fragment>

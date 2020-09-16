@@ -15,14 +15,18 @@ import EventHandling from './sample/functional-component/HandlingEvents'
 // import ToDoListComponent from './sample/functional-component/ToDoList'
 // import IncDesc from './sample/functional-component/Increament-Decreament'
 // import ToDoListMaterialUI from './sample/functional-component/ToDoListMaterialUI'
-import GoogleKeepApp from './sample/functional-component/googleKeepApp/GoogleKeepAppMaster'
+// import GoogleKeepApp from './sample/functional-component/googleKeepApp/GoogleKeepAppMaster'
+import CompA from './sample/functional-component/ContextAPI-Hook/ContextA'
 // const cardsArray = sampData.map((data,i)=>{
 //   return <NetflixCard key={i} cardTitle={data.cardTitle} cardImg={data.cardImg} cardLinkUrl={data.cardLinkUrl} />
 // })
+
+
 class App extends Component {
   constructor(){
     super();
   }
+  
   render() {
     // const cardsArray = sampData.map((data,i)=>{
     //   return <NetflixCard key={i} cardTitle={sampData[i].cardTitle} cardImg={sampData[i].cardImg} cardLinkUrl={sampData[i].cardLinkUrl} / > 
@@ -60,7 +64,7 @@ class App extends Component {
       //   <div className="clearfix"></div>
       // </React.Fragment>
       // <ArrayMapComp />
-      <GoogleKeepApp />
+     true
     );
   }
 }

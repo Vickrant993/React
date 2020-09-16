@@ -6,12 +6,14 @@
 
 import React from 'react';
 import ReactDom from 'react-dom';
+
+import { BrowserRouter } from 'react-router-dom'
 import './index.css';
-import App from './App.js';
-import Heading from './sample/functional-component/Heading';
-import Lisitng from './sample/functional-component/lisitng';
-import SlotMachGame from './sample/functional-component/slotMachineGame';
-import SampleHooks from './sample/functional-component/hooksReact'
+import AppFunctionalComp from "./AppFunctionalComponent";
+// import Heading from './sample/functional-component/Heading';
+// import Lisitng from './sample/functional-component/lisitng';
+// import SlotMachGame from './sample/functional-component/slotMachineGame';
+// import SampleHooks from './sample/functional-component/hooksReact'
 
 // ReactDom.render(
 //   <React.Fragment>
@@ -19,7 +21,10 @@ import SampleHooks from './sample/functional-component/hooksReact'
 //   </React.Fragment>,
 //   document.getElementById('root')
 // );
-ReactDom.render(<App />,
+ReactDom.render(
+  <BrowserRouter>
+    <AppFunctionalComp />
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
@@ -28,9 +33,9 @@ ReactDom.render(<App />,
 
 
 
-/* 
+/*
 
-  picture Gallery with inline css e.g 
+  picture Gallery with inline css e.g
 
   */
 
@@ -76,10 +81,10 @@ ReactDom.render(<App />,
 
 
 
-/* 
-  
-  Hello world with dynamic condition text and color e.g 
-  
+/*
+
+  Hello world with dynamic condition text and color e.g
+
 */
 
 // import React from 'react';

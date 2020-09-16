@@ -6,6 +6,7 @@ import Note from './Note';
 
 const GoogleKeepApp =()=>{    
     const [notes, setNote]= useState([])
+
     const addNewNote = (note)=>{
         setNote((oldVal)=>{
             return [
@@ -14,6 +15,16 @@ const GoogleKeepApp =()=>{
             ]
         })
     }
+
+    const deleteNote = (id)=>{
+        console.log("id => ", id)
+        setNote((oldVal)=>            
+            oldVal.filter((currVal, index)=>{
+                return index !== id
+            })            
+        )
+    }
+
     return (
         <React.Fragment>
             <Header />
@@ -26,6 +37,7 @@ const GoogleKeepApp =()=>{
                     id={index}
                     title={currVal.title}
                     content={currVal.content}
+                    deleteItem={deleteNote}
                     />
                     )
                 })
