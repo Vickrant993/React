@@ -22,3 +22,11 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.active_menu{
+  color: red;
+}
+
+.active_menu:hover{
+  border-bottom: 2px solid red;
+}

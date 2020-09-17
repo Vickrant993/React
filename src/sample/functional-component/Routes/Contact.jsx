@@ -1,9 +1,9 @@
 import React from 'react'
 
-const ContactUs = ()=>{
+const ContactUs = (props)=>{
         return(
             <React.Fragment>
-                <h1>Hi I am Contact Us Page..!!</h1>
+                <h1>Hi I am {props.name} Us Page..!!</h1>
             </React.Fragment>
         )
 }

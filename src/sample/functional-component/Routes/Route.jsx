@@ -11,8 +11,8 @@ const RouteMain = () => {
         <React.Fragment>
             <Menu></Menu>
             <Switch>
-                <Route path="/" component={AboutUs} exact></Route>
-                <Route path="/contact" component={ContactUs} exact></Route>
+                <Route path="/" component={()=><AboutUs name="About" />} exact></Route>
+                <Route path="/contact" render={()=><ContactUs name="Contact" />} exact></Route>
                 <Route component={Error}></Route>
             </Switch>
         </React.Fragment>
